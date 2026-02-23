@@ -32,8 +32,6 @@ Open the main plugin file and update the API key constant near the top:
 define('GDPRLOCAL_API_KEY', 'your-secret-api-key-here');
 ```
 
-> ⚠️ Do not commit your real API key to version control. Consider moving this to `wp-config.php` or an environment variable.
-
 ---
 
 ## How It Works
