@@ -198,15 +198,4 @@ gdprlocal-partner-landing-pages/
 
 ## Notes
 
-- Flushing rewrite rules on every partner creation (`flush_rewrite_rules()`) is convenient but can be slow under high load. For bulk imports, consider flushing once after all partners are created.
-- The API key is currently hardcoded. For production, move it to `wp-config.php`:
-  ```php
-  define('GDPRLOCAL_API_KEY', getenv('GDPRLOCAL_API_KEY'));
-  ```
 - Partner landing pages use a fully custom HTML shell (not the active theme) to avoid inheriting theme headers, menus, and footers, while still firing `wp_head()` and `wp_footer()` so SEO plugins (e.g. Yoast) and enqueued assets work correctly.
-
----
-
-## License
-
-Proprietary — GDPRLocal Ltd. All rights reserved.
